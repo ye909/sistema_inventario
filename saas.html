@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Préstamos y Ventas</title>
+    <link rel="stylesheet" href="tabla.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Préstamos y Ventas de Computadoras</h1>
+        <nav>
+            <ul>
+                <li><a href="#ventas">Ventas</a></li>
+                <li><a href="#prestamos">Préstamos</a></li>
+                <li><a href="#agregar">Agregar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ventas">
+            <h2>Ventas</h2>
+            <table id="ventas-tabla">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Descripción</th>
+                        <th>Progreso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas de ventas serán añadidas aquí -->
+                </tbody>
+            </table>
+        </section>
+        <section id="prestamos">
+            <h2>Préstamos</h2>
+            <table id="prestamos-tabla">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Disponibilidad</th>
+                        <th>Descripción</th>
+                        <th>Progreso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas de préstamos serán añadidas aquí -->
+                </tbody>
+            </table>
+        </section>
+        <section id="agregar">
+            <h2>Agregar Nueva Computadora</h2>
+            <form id="agregar-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea><br>
+                <label for="precio">Precio (para ventas):</label>
+                <input type="number" id="precio" name="precio"><br>
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="venta">Venta</option>
+                    <option value="prestamo">Préstamo</option>
+                </select><br>
+                <label for="disponibilidad">Disponibilidad (para préstamo):</label>
+                <input type="checkbox" id="disponibilidad" name="disponibilidad"><br>
+                <label for="progreso">Progreso:</label>
+                <select id="progreso" name="progreso" required>
+                    <option value="pendiente">Pendiente</option>
+                    <option value="en_proceso">En proceso</option>
+                    <option value="completado">Completado</option>
+                </select><br>
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
