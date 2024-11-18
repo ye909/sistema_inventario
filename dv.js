@@ -1,5 +1,5 @@
 
-{
+[{
     "Portátiles": "ultrabooks",
     "Características":["Pantallas de 13 a 15",
         "Procesadores de alto rendimiento (Intel Core i5/i7 o AMD Ryzen)",
@@ -9,7 +9,7 @@
     "Descripción": "Los ultrabooks son portátiles ligeros, delgados y potentes, diseñados para ofrecer un equilibrio entre rendimiento, portabilidad y duración de la batería. Están pensados principalmente para profesionales y usuarios que necesitan un dispositivo fácil de transportar",
     "Opcion":["MacBook Air (M2) Un clásico ultrabook de Apple con el chip M2, que ofrece una gran potencia y eficiencia energética." ,
 "Dell XPS 13", "Con una pantalla InfinityEdge casi sin bordes, es conocido por su diseño elegante y rendimiento.",
-"HP Spectre x360", "Portátil convertible con pantalla táctil y un diseño premium, ideal para profesionales y creadores de contenido." ]
+"HP Spectre x360", "sPortátil convertible con pantalla táctil y un diseño premium, ideal para profesionales y creadores de contenido." ]
 }]
 
 
