@@ -39,3 +39,11 @@ th {
     background-color: #4CAF50;
     color: white;
 }
+th:nth-child(1){
+    width: 10px;
+}
+@scope(){
+}
+.prestamos{
+    display: none;
+}
