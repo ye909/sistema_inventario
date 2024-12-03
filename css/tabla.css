@@ -44,6 +44,6 @@ th:nth-child(1){
 }
 @scope(){
 }
-.prestamos{
+.prestamos,.agregar,.ventas{
     display: none;
 }
