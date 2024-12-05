@@ -1,14 +1,14 @@
 const agregar = document.getElementById("agregar")
-const agregar_menu = document.getElementById("agregar_menu").addEventListener("click",ver_menu)
+const agregar_menu = document.getElementById("agregar_menu")
 
-function ver_menu() {
-        if (agregar.style.display=="none" )
-            agregar.style.display= "inline"
-        else{
-            agregar.style.display=="none" 
-        }
-        
+.addEventListener("click",function (e) {
+    e.preventDefault()
+    if (agregar.style.display=="none" )
+        agregar.style.display= "inline"
+    else{
+        agregar.style.display ="none" 
     }
+})
 
 
 // function ver_menu() {

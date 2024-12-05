@@ -10,6 +10,7 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    font-size: 10px;
 }
 nav ul {
     list-style-type: none;
@@ -19,12 +20,14 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 10px;
+    font-size: 10px;
 }
 section {
     margin: 20px;
 }
 h2 {
     color: #4CAF50;
+    font-size: 13px;
 }
 table {
     width: 100%;
@@ -39,11 +42,42 @@ th {
     background-color: #4CAF50;
     color: white;
 }
-th:nth-child(1){
-    width: 10px;
+
+@scope(section){
 }
-@scope(){
-}
-.prestamos,.agregar,.ventas{
+.agregar,.ventas,.prestamos{
     display: none;
+   
+}
+
+.container_opcion{
+    display: flex;
+    justify-content:space-between;
+    padding: 4px;
+    font-size: 10px;
+}
+.container_opcion div:hover:nth-child(1){
+    background: rgb(96, 166, 96);
+}
+.container_opcion div:nth-child(2){
+    background: rgb(117, 138, 117);
+}
+.container_opcion div:nth-child(3){
+    background: rgb(177, 189, 177);
+}
+:is( .agregar){
+  text-align: center;
+}
+select{
+    width: 170px;
+}
+option:hover{
+background: blue;
+}
+.container_cajas_from{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 10px;
 }
