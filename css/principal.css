@@ -45,3 +45,12 @@ h2 {
 article{
     margin: 8px;
 }
+ img{
+    object-fit: cover;
+    width: 80px;
+    
+ }
+ img:hover{
+    transform: scale(1.6);
+ }
+
