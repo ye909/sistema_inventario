@@ -49,6 +49,12 @@ th {
     display: none;
    
 }
+:is(.container_opcion){
+    display: flex;
+    justify-content: space-between;
+  
+
+}
 
 .container_opcion{
     display: flex;
