@@ -22,6 +22,10 @@ nav ul li {
     margin: 0 10px;
     font-size: 10px;
 }
+a{
+    list-style: none;
+    text-decoration: none;
+}
 section {
     margin: 20px;
 }
@@ -29,16 +33,16 @@ h2 {
     color: #4CAF50;
     font-size: 13px;
 }
-table {
+.ventas table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
-th, td {
+.ventas th,.ventas td {
     border: 1px solid #ddd;
     padding: 8px;
 }
-th {
+.ventas th {
     background-color: #4CAF50;
     color: white;
 }
@@ -49,7 +53,7 @@ th {
     display: none;
    
 }
-:is(.container_opcion){
+:is(.container_opcion,.container_tabla_menu){
     display: flex;
     justify-content: space-between;
   
@@ -62,8 +66,26 @@ th {
     padding: 4px;
     font-size: 10px;
 }
-.container_opcion div:hover:nth-child(1){
-    background: rgb(96, 166, 96);
+.container_opcion P{
+font-size: 10PX;
+}
+.container_opcion tr{
+    font-size: 8PX; 
+}
+.container_opcion :is(table){
+    overflow: scroll;
+    border:1px solid #080808;
+    border-collapse: collapse;
+}
+.container_opcion :is(th ,td){
+    border:1px solid #080808;  
+}
+.container_opcion p{
+    background: rgb(227, 225, 225);
+    border: solid 1px black;
+}
+.container_opcion p:hover:nth-child(1){
+    background: rgb(246, 248, 246);
 }
 .container_opcion div:nth-child(2){
     background: rgb(117, 138, 117);
