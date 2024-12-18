@@ -46,11 +46,20 @@ h2 {
     padding: 10px;
     margin: 10px 0;
 }
-.subcomtainer_card_inv{
-    border:1px solid #333;
-    width: 10%;
-    border-left:solid 6px #4CAF50;
-    box-shadow: 1px 1px  black;
+@scope (.subcomtainer_card_inv){
+    article{
+
+        border:1px solid #333;
+        width: 100%;
+        border-left:solid 6px #4CAF50;
+        box-shadow: 1px 1px  black;   
+    }
+   
+}
+span{
+    width: 20%;
+    font-size: 10px;
+    overflow: scroll;
 }
 .comtainer_card_inv{
 display: flex;
